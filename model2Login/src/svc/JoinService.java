@@ -9,7 +9,7 @@ import vo.Member;
 
 public class JoinService {
 	public int insertMember(Member member) {
-		LoginDAO loginDAO = LoginDAO.getinstance();
+		LoginDAO loginDAO = LoginDAO.getInstance();
 		Connection conn = getConnection();
 		loginDAO.setConnection(conn);
 		int joinMember = loginDAO.insertMember(member);

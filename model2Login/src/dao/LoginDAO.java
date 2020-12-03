@@ -16,7 +16,7 @@ public class LoginDAO {
 
 	}
 
-	public static LoginDAO getinstance() {
+	public static LoginDAO getInstance() {
 		if (loginDAO == null) {
 			loginDAO = new LoginDAO();
 		}

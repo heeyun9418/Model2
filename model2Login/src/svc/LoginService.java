@@ -10,7 +10,7 @@ import vo.Member;
 public class LoginService {
 
 	public Member getLoginMember(String id, String passwd) {
-		LoginDAO loginDAO = LoginDAO.getinstance();
+		LoginDAO loginDAO = LoginDAO.getInstance();
 		Connection conn = getConnection();
 		loginDAO.setConnection(conn);
 		Member loginMember = loginDAO.selectLoginMember(id, passwd);
